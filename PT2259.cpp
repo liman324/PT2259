@@ -36,6 +36,7 @@ void PT2259::setVol_right(bool mute, int vol_r){
 void PT2259::writeWire(int8_t a, int8_t b, int8_t c){
   Wire.beginTransmission(PT2259_address);
   Wire.write (CLEAR);// clear
+  Wire.beginTransmission(PT2259_address);	
   Wire.write (a);    // mute
   Wire.write (b);    // 10 dB
   Wire.write (c);    // 1 dB
