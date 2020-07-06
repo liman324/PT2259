@@ -28,6 +28,7 @@ PT2259();
 void setVol_ch2(bool mute, int vol_ch);
 void setVol_left(bool mute, int vol_l);
 void setVol_right(bool mute, int vol_r);
+void clear();
 
 private:
 void writeWire(int8_t a, int8_t b, int8_t c);
